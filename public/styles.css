@@ -2,6 +2,19 @@ body{
     background-color: #141414;
 }
 
+.main-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 99vw;
+}
+
+.text{
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
 .login-box {
     position: absolute;
     top: 50%;
