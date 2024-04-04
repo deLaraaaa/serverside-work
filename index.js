@@ -20,6 +20,6 @@ app.post('/', (req, res) => { /* Renderiza a página inicial usando POST request
     res.render('index.ejs', { username: username, age: age }); /* Renderiza a página inicial passando o nome do usuário e a idade */
 }); 
 
-app.listen(port, () => { // Inicializa o servidor na porta definida
+app.listen(port, () => { // Inicializa o servidor na porta definida (3000)
     console.log(`Server is running on port ${port}`);
 });
