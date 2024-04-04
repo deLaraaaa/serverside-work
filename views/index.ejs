@@ -8,14 +8,20 @@
     <title>Home</title>
 </head>
 
-
 <body>
+    <div class="login-button">
+        <a href="/login" class="button">LOGIN</a>
+    </div>
     <div class="main-body">
         <div class="text">
-            <h1>Bem-vindo, <%= username %>!</h1>
+            <h1>Bem-vindo, <%= username %></h1>
         </div>
         <div class="text">
-            <p>Você tem <%= age ? age : '?' %> anos.</p>
+            <% if (isNaN(age)) { %>
+            <p>Você não inseriu sua Data de Nascimento.</p>    
+            <% } else {%>
+            <p>Você tem <%= age %> anos.</p>
+            <% } %>
         </div>
     </div>
 </body>

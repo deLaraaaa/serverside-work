@@ -1,5 +1,6 @@
 body{
     background-color: #141414;
+    font-family: monospace  ;
 }
 
 .main-body{
@@ -9,11 +10,33 @@ body{
   width: 99vw;
 }
 
-
 .text{
   color: white;
   font-size: 2rem;
-  margin-top: 20px;
+}
+
+.login-button{
+  display: flex;
+  justify-content: end;
+  margin: 30px 100px 0 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0,0,0,.9);
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #424242;
+  color: #ffffff;
+  transition: 0.3s;
 }
 
 .login-box {
